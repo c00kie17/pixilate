@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='pixilate',
-    version = '1.0.1',
+    version = '1.0.2',
     description= 'converts any image to true color format',
     author = 'c00kie17',
     author_email = 'anshul1708@gmail.com',
