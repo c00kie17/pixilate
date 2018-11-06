@@ -2,7 +2,7 @@
 
 > convert images to true color format using python :bulb:
 
-![](https://user-images.githubusercontent.com/10531093/48067945-85a2a280-e1f7-11e8-9ebe-f6b9dc264b52.gif)
+![](https://user-images.githubusercontent.com/10531093/48068065-d6b29680-e1f7-11e8-8395-cd5434467362.gif)
 
 ## Contents
 - [Installation](#install)
