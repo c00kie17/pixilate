@@ -22,10 +22,11 @@ def resize_image(image):
 	return image
 
 def get_color(pixel):
-	return "\x1b[48;2;"+str(pixel[0])+";"+str(pixel[1])+";"+str(pixel[2])+"m  \x1b[0m"
+	return "\x1b[48;2;"+str(pixel[0])+";"+str(pixel[1])+";"+str(pixel[2])+"m  \x1b[0m" 	
 
 
 def transform(image):
+	image = image.convert('RGB')
 	pixels = list(image.getdata())
 	string_image = [get_color(pixel) for pixel in pixels]
 	for index in range(100, len(string_image), 101):
