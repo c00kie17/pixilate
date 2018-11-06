@@ -13,11 +13,11 @@ def load_image(image_path):
 		sys.exit()
 	return image 
 
-def resize_image(image):
+def resize_image(image,new_width=100):
 	old_width, old_height = image.size
 	ratio = float(old_height)/float(old_width)
-	new_height = int(ratio * 100)
-	dim = (100, new_height)
+	new_height = int(ratio * new_width)
+	dim = (new_width, new_height)
 	image = image.resize(dim)
 	return image
 
@@ -25,11 +25,11 @@ def get_color(pixel):
 	return "\x1b[48;2;"+str(pixel[0])+";"+str(pixel[1])+";"+str(pixel[2])+"m  \x1b[0m" 	
 
 
-def transform(image):
+def transform(image,step=100):
 	image = image.convert('RGB')
 	pixels = list(image.getdata())
 	string_image = [get_color(pixel) for pixel in pixels]
-	for index in range(100, len(string_image), 101):
+	for index in range(step, len(string_image), step+1):
 		string_image.insert(index,'\n',)
 	return ''.join(string_image) 
 
