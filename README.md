@@ -13,13 +13,13 @@
 - [Author](#author)
 - [License](#ls)
 
-***
+
 <a name="install"></a>
 ## Install :sparkles:
 
 ```pip install pixilate```
 
-***
+
 <a name="run"></a>
 ## Running :running:
 
@@ -30,7 +30,7 @@
 | filepath | <code>path</code> | The path to the file you want to convert |
 | savetofile | <code>bool: 1 or 0</code> | if you want to save your output to a file (defaults to 0) |
 
-***
+
 <a name="ts"></a>
 ## Troubleshoot :scream:
 
