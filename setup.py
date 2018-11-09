@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='pixilate',
-    version = '1.0.2',
+    version = '1.0.3',
     description= 'converts any image to true color format',
     author = 'c00kie17',
     author_email = 'anshul1708@gmail.com',
@@ -15,7 +15,7 @@ setup(
     packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'pixilate = pixilate.pixilate_main:main',
+            'pixilate = pixilate.__main__:main',
         ]
     },
     classifiers=[
